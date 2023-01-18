@@ -6,7 +6,7 @@ function FanModal() {
   function handleSubmit(e) {
     e.preventDefault();
     console.log(idol_name.current.value);
-    alert("hola")
+    alert("hola");
   }
 
   return (
@@ -36,11 +36,14 @@ function FanModal() {
                 <label for="idol_name" className="form-label">
                   Nombre
                 </label>
-                <input type="text" className="form-control" id="idol_name" ref={idol_name}/>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="idol_name"
+                  ref={idol_name}
+                />
               </div>
-              <button type="button" onClick={handleSubmit} className="btn btn-outline-danger">
-                Registrar
-              </button>
+              <button className="btn btn-outline-danger">Registrar</button>
             </form>
           </div>
           <div class="modal-footer">
