@@ -5,15 +5,21 @@ function FanModal() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(idol_name.current.value);
-    alert("hola");
+    const requestOptions = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: idol_name.current.value })
+    };
+    fetch('http://localhost:8000/idols/', requestOptions)
+        .then(response => response.json())
+        .then(data => console.log(data));
   }
 
   return (
     <div
       className="modal fade"
       id="exampleModal"
-      tabindex="-1"
+      tabIndex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
@@ -24,6 +30,7 @@ function FanModal() {
               Dinos quiém es tu ídolo...
             </h1>
             <button
+              id="closeModal"
               type="button"
               className="btn-close"
               data-bs-dismiss="modal"
@@ -33,7 +40,7 @@ function FanModal() {
           <div className="modal-body">
             <form onSubmit={handleSubmit}>
               <div className="mb-3">
-                <label for="idol_name" className="form-label">
+                <label htmlFor="idol_name" className="form-label">
                   Nombre
                 </label>
                 <input
@@ -43,17 +50,10 @@ function FanModal() {
                   ref={idol_name}
                 />
               </div>
-              <button className="btn btn-outline-danger">Registrar</button>
+              <button data-bs-dismiss="modal" className="btn w-100 btn-outline-danger">
+                Registrar
+              </button>
             </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              className="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
           </div>
         </div>
       </div>

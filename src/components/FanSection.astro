@@ -1,7 +1,6 @@
 ---
 import fan1 from "../images/fan1.jpeg";
 import fan2 from "../images/fan2.jpeg";
-// import FanModal from './FanModal.astro';
 import FanModal from './FanModal';
 ---
 
@@ -40,7 +39,7 @@ import FanModal from './FanModal';
   </div>
 </div>
 
-<FanModal/>
+<FanModal client:visible />
 
 <style>
   .fanSection {
