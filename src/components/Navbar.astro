@@ -1,0 +1,41 @@
+---
+import logo from "../images/logo.png";
+---
+
+<header>
+  <nav class="navbar bg-body-tertiary d-flex">
+    <div class="container-fluid">
+      <div class="logo d-flex flex-row">
+        <img src={logo} alt="" />
+        <a class="nav-link" href="/">SpecialFan</a>
+      </div>
+      <div class="d-flex flex-row">
+        <a class="nav-link" href="#us">¿Quiénes Somos?</a>
+        <a class="nav-link" href="#fanSection">Sección de Fans</a>
+        <a class="nav-link" href="#contact">Contáctanos</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<style>
+  a {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  header {
+    position: sticky;
+    top: 0;
+  }
+  .logo {
+    margin-left: 10rem;
+    align-items: center;
+  }
+  .logo img {
+    height: 4rem;
+  }
+  .logo a {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+</style>

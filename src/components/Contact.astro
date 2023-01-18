@@ -1,0 +1,47 @@
+<div class="contactSection">
+  <div class="contactColumn">
+    <h2 class="mb-5">Contáctanos</h2>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Nombres</label>
+        <input type="text" class="form-control" id="name" />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          aria-describedby="emailHelp"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="topic" class="form-label">Asunto</label>
+        <textarea class="form-control" id="topic"></textarea>
+      </div>
+      <button type="submit" class="btn w-100 btn-block btn-outline-danger">Submit</button>
+    </form>
+  </div>
+  <div class="contactColumn">
+    <h2 class="mb-5">Información de Contacto</h2>
+    <h3>Teléfonos</h3>
+    <p>+54 9 3413 69-2993</p>
+    <h3>Correo</h3>
+    <p>specialfanoficial@gmail.com</p>
+    <h4>Rosario, Argentina</h4>
+  </div>
+</div>
+
+<style>
+  .contactSection {
+    display: flex;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  }
+
+  .contactColumn {
+    width: 50%;
+    padding: 3rem;
+
+  }
+</style>

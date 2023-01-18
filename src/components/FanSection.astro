@@ -1,0 +1,49 @@
+---
+import fan1 from '../images/fan1.jpg';
+import fan2 from '../images/fan2.jpg';
+---
+
+<div class="fanSection">
+    <div class="fanType">
+        <img src={fan1} alt="">
+        <div class="fanContent">
+            <h3> Fan General </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, quae eligendi? Eaque, nostrum quos! Delectus facere, itaque dolor quos qui dolore, eius rem, exercitationem nesciunt molestias voluptas! Praesentium, consequuntur consequatur!</p>
+            <button type="button" class="btn w-100 btn-outline-danger"> Gratis </button>
+        </div>
+    </div>
+    <div class="fanType">
+        <img src={fan2} alt="">
+        <div class="fanContent">
+            <h3> Fan Platino </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, quae eligendi? Eaque, nostrum quos! Delectus facere, itaque dolor quos qui dolore, eius rem, exercitationem nesciunt molestias voluptas! Praesentium, consequuntur consequatur!</p>
+            <button type="button" class="btn w-100 btn-outline-danger"> 3000$ </button>
+        </div>
+    </div>
+</div>
+
+<style>
+    .fanSection {
+        display: flex;
+        padding: 1rem;
+    }
+    .fanType {
+        display: flex;
+        margin: 1rem;
+		padding: 1rem;
+		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    }
+    .fanType img {
+        max-width: 15rem;
+        width: 100%;
+        height: 20rem;
+    }
+    .fanContent {
+        flex-direction: column;
+        margin-left: 2rem;
+    }
+    .fanContent button {
+        margin-top: 0.75rem;
+
+    }
+</style>
