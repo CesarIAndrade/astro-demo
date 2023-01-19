@@ -53,6 +53,7 @@ import { t } from "i18next";
     padding: 1rem;
     text-align: left !important;
   }
+
   .fanType {
     display: flex;
     margin: 1rem;
@@ -61,12 +62,13 @@ import { t } from "i18next";
       0 2px 4px -2px rgba(0, 0, 0, 0.1);
     width: 50%;
   }
+
   .fanType img {
-    max-width: 17rem;
-    width: 100%;
+    width: 17rem;
     height: 20rem;
     object-fit: cover;
   }
+
   .fanContent {
     margin-left: 2rem;
     padding: 1.5rem;
@@ -74,7 +76,43 @@ import { t } from "i18next";
     flex-direction: column;
     justify-content: space-between;
   }
+
   .modal-dialog {
     text-align: left !important;
+  }
+
+  @media (max-width: 768px) {
+    .fanSection {
+      flex-direction: column;
+    }
+    .fanType {
+      flex-direction: column;
+      width: auto;
+      justify-content: center;
+    }
+    .fanType img {
+      width: auto;
+      height: 15rem;
+    }
+    .fanContent {
+      margin-left: 0;
+      padding: auto;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .fanType {
+      flex-direction: column;
+      background-color: red;
+
+    }
+    .fanType img {
+      width: auto;
+      height: 15rem;
+    }
+    .fanContent {
+      margin-left: 0;
+      padding: auto;
+    }
   }
 </style>

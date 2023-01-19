@@ -7,11 +7,15 @@ import { t } from "i18next";
     <h2 class="mb-5">{t("contact.contactForm.title")}</h2>
     <form>
       <div class="mb-3">
-        <label for="name" class="form-label">{t("contact.contactForm.formItems.one")}</label>
+        <label for="name" class="form-label"
+          >{t("contact.contactForm.formItems.one")}</label
+        >
         <input type="text" class="form-control" id="name" />
       </div>
       <div class="mb-3">
-        <label for="email" class="form-label">{t("contact.contactForm.formItems.two")}</label>
+        <label for="email" class="form-label"
+          >{t("contact.contactForm.formItems.two")}</label
+        >
         <input
           type="email"
           class="form-control"
@@ -20,10 +24,14 @@ import { t } from "i18next";
         />
       </div>
       <div class="mb-3">
-        <label for="topic" class="form-label">{t("contact.contactForm.formItems.three")}</label>
+        <label for="topic" class="form-label"
+          >{t("contact.contactForm.formItems.three")}</label
+        >
         <textarea class="form-control" id="topic"></textarea>
       </div>
-      <button type="submit" class="btn w-100 btn-block btn-outline-danger">{t("contact.contactForm.formItems.four")}</button>
+      <button type="submit" class="btn w-100 btn-block btn-outline-danger"
+        >{t("contact.contactForm.formItems.four")}</button
+      >
     </form>
   </div>
   <div class="contactColumn">
@@ -48,7 +56,18 @@ import { t } from "i18next";
     padding: 3rem;
   }
 
-  h3, h4 {
+  h3,
+  h4 {
     margin-top: 2rem;
+  }
+
+  @media (max-width: 500px) {
+    .contactSection {
+      flex-direction: column;
+    }
+    .contactColumn {
+      width: auto;
+      padding: auto;
+    }
   }
 </style>
