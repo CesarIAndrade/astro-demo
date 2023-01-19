@@ -1,0 +1,51 @@
+{
+  "navbar": {
+    "items": {
+      "one": "Fan Section"
+    }
+  },
+  "us": {
+    "title": "Us",
+    "description": "We connect you with your idol in a unique way, being part of its official community"
+  },
+  "fanSection": {
+    "generalFan": {
+      "title": "General Fan",
+      "benefits": {
+        "one": "Exclusive content",
+        "two": "Giveaways",
+        "three": "Oficial e-commerce",
+        "four": "Free"
+      }
+    },
+    "platinumFan": {
+      "title": "Platinum Fan",
+      "benefits": {
+        "one": "Exclusive content",
+        "two": "Epic Giveaways",
+        "three": "Official e-commerce with limited collections",
+        "four": "Chance to meet your idol"
+      }
+    }
+  },
+  "contact": {
+    "contactForm": {
+      "title": "Contact Us",
+      "formItems": {
+        "one": "Names",
+        "two": "Mail",
+        "three": "Subject",
+        "four": "Send"
+      }
+    },
+    "contact": {
+      "title": "Contact Info",
+      "phone": "Phone"
+    }
+  },
+  "modal": {
+    "title": "Register your idol...",
+    "inputLabel": "Names",
+    "buttonLabel": "Register"
+  }
+}

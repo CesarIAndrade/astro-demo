@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 
-function FanModal() {
+function FanModal({title, inputLabel, buttonLabel}) {
   const idol_name = useRef();
 
   function handleSubmit(e) {
@@ -27,7 +27,7 @@ function FanModal() {
         <div className="modal-content">
           <div className="modal-header">
             <h1 className="modal-title fs-5" id="exampleModalLabel">
-              Dinos quiém es tu ídolo...
+              {title}
             </h1>
             <button
               id="closeModal"
@@ -41,7 +41,7 @@ function FanModal() {
             <form onSubmit={handleSubmit}>
               <div className="mb-3">
                 <label htmlFor="idol_name" className="form-label">
-                  Nombre
+                  {inputLabel}
                 </label>
                 <input
                   type="text"
@@ -51,7 +51,7 @@ function FanModal() {
                 />
               </div>
               <button data-bs-dismiss="modal" className="btn w-100 btn-outline-danger">
-                Registrar
+                {buttonLabel}
               </button>
             </form>
           </div>
