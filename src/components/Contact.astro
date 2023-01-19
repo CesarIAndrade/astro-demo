@@ -1,13 +1,17 @@
+---
+import { t } from "i18next";
+---
+
 <div class="contactSection">
   <div class="contactColumn">
-    <h2 class="mb-5">Contáctanos</h2>
+    <h2 class="mb-5">{t("contact.contactForm.title")}</h2>
     <form>
       <div class="mb-3">
-        <label for="name" class="form-label">Nombres</label>
+        <label for="name" class="form-label">{t("contact.contactForm.formItems.one")}</label>
         <input type="text" class="form-control" id="name" />
       </div>
       <div class="mb-3">
-        <label for="email" class="form-label">Correo</label>
+        <label for="email" class="form-label">{t("contact.contactForm.formItems.two")}</label>
         <input
           type="email"
           class="form-control"
@@ -16,17 +20,17 @@
         />
       </div>
       <div class="mb-3">
-        <label for="topic" class="form-label">Asunto</label>
+        <label for="topic" class="form-label">{t("contact.contactForm.formItems.three")}</label>
         <textarea class="form-control" id="topic"></textarea>
       </div>
-      <button type="submit" class="btn w-100 btn-block btn-outline-danger">Submit</button>
+      <button type="submit" class="btn w-100 btn-block btn-outline-danger">{t("contact.contactForm.formItems.four")}</button>
     </form>
   </div>
   <div class="contactColumn">
-    <h2 class="mb-5">Información de Contacto</h2>
-    <h3>Teléfonos</h3>
+    <h2 class="mb-5">{t("contact.contact.title")}</h2>
+    <h3>{t("contact.contact.phone")}</h3>
     <p>+54 9 3413 69-2993</p>
-    <h3>Correo</h3>
+    <h3>{t("contact.contactForm.formItems.two")}</h3>
     <p>specialfanoficial@gmail.com</p>
     <h4>Rosario, Argentina</h4>
   </div>
@@ -42,6 +46,9 @@
   .contactColumn {
     width: 50%;
     padding: 3rem;
+  }
 
+  h3, h4 {
+    margin-top: 2rem;
   }
 </style>

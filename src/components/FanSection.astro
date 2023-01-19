@@ -1,18 +1,19 @@
 ---
 import fan1 from "../images/fan1.jpeg";
 import fan2 from "../images/fan2.jpeg";
-import FanModal from './FanModal';
+import FanModal from "./FanModal";
+import { t } from "i18next";
 ---
 
 <div class="fanSection">
   <div class="fanType">
     <img src={fan1} alt="" />
     <div class="fanContent">
-      <h3>Fan General</h3>
+      <h3>{t("fanSection.generalFan.title")}</h3>
       <ul>
-        <li>Contenido exclusivo</li>
-        <li>Sorteos</li>
-        <li>E-commerce oficial</li>
+        <li>{t("fanSection.generalFan.benefits.one")}</li>
+        <li>{t("fanSection.generalFan.benefits.two")}</li>
+        <li>{t("fanSection.generalFan.benefits.three")}</li>
       </ul>
       <button
         type="button"
@@ -20,26 +21,31 @@ import FanModal from './FanModal';
         data-bs-toggle="modal"
         data-bs-target="#exampleModal"
       >
-        Gratis
+        {t("fanSection.generalFan.benefits.four")}
       </button>
     </div>
   </div>
   <div class="fanType">
     <img src={fan2} alt="" />
     <div class="fanContent">
-      <h3>Fan Platino</h3>
+      <h3>{t("fanSection.platinumFan.title")}</h3>
       <ul>
-        <li>Contenido exclusivo</li>
-        <li>Sorteos épicos</li>
-        <li>E-commerce oficial con colecciones limitadas</li>
-        <li>Posibilidad de conocerlo</li>
+        <li>{t("fanSection.platinumFan.benefits.one")}</li>
+        <li>{t("fanSection.platinumFan.benefits.two")}</li>
+        <li>{t("fanSection.platinumFan.benefits.three")}</li>
+        <li>{t("fanSection.platinumFan.benefits.four")}</li>
       </ul>
       <button type="button" class="btn w-100 btn-outline-danger"> 3000$</button>
     </div>
   </div>
 </div>
 
-<FanModal client:visible />
+<FanModal
+  client:visible
+  title={t("modal.title")}
+  inputLabel={t("modal.inputLabel")}
+  buttonLabel={t("modal.buttonLabel")}
+/>
 
 <style>
   .fanSection {
@@ -56,9 +62,10 @@ import FanModal from './FanModal';
     width: 50%;
   }
   .fanType img {
-    max-width: 18rem;
+    max-width: 17rem;
     width: 100%;
     height: 20rem;
+    object-fit: cover;
   }
   .fanContent {
     margin-left: 2rem;

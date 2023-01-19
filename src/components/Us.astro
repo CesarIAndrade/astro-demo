@@ -1,7 +1,12 @@
+---
+import { t, changeLanguage } from "i18next";
+import { Trans, HeadHrefLangs } from "astro-i18next/components";
+---
+
 <div class="us">
-  <h2>¿Quiénes Somos?</h2>
+  <h2>{t("us.title")}</h2>
   <p>
-    Te conectamos con tu idolo de una manera unica, siendo parte de su comunidad oficial
+    {t("us.description")}
   </p>
 </div>
 

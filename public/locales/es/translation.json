@@ -1,0 +1,52 @@
+{
+    "navbar": {
+      "items": {
+        "one": "Sección de Fans"
+      }
+    },
+    "us": {
+      "title": "¿Quiénes Somos?",
+      "description": "Te conectamos con tu idolo de una manera unica, siendo parte de su comunidad oficial"
+    },
+    "fanSection": {
+      "generalFan": {
+        "title": "Fan General",
+        "benefits": {
+          "one": "Contenido exclusivo",
+          "two": "Sorteos",
+          "three": "Tienda oficial",
+          "four": "Gratis"
+        }
+      },
+      "platinumFan": {
+        "title": "Fan Platino",
+        "benefits": {
+          "one": "Contenido exclusivo",
+          "two": "Sorteos épicos",
+          "three": "Tienda oficial con colecciones limitadas",
+          "four": "Posibilidad de conocerlo"
+        }
+      }
+    },
+    "contact": {
+      "contactForm": {
+        "title": "Contáctanos",
+        "formItems": {
+          "one": "Nombres",
+          "two": "Correo",
+          "three": "Asunto",
+          "four": "Enviar"
+        }
+      },
+      "contact": {
+        "title": "Información de Contacto",
+        "phone": "Teléfono"
+      }
+    },
+    "modal": {
+      "title": "Registra a tu ídolo...",
+      "inputLabel": "Nombres",
+      "buttonLabel": "Registrar"
+    }
+  }
+  
