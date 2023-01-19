@@ -9,7 +9,7 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/astro-demo/assets/index.9cced42b.css" />
-<link rel="stylesheet" href="/astro-demo/assets/index.3706f833.css" /></head>
+<link rel="stylesheet" href="/astro-demo/assets/index.741f41f8.css" /></head>
 	<body>
 		<style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).visible=(s,c,n)=>{const r=async()=>{await(await s())()};let i=new IntersectionObserver(e=>{for(const t of e)if(!!t.isIntersecting){i.disconnect(),r();break}});for(let e=0;e<n.children.length;e++){const t=n.children[e];i.observe(t)}},window.dispatchEvent(new Event("astro:visible"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><header class="astro-P23KYIUG">
   <nav class="navbar text-white d-flex astro-P23KYIUG" style="background-color: #1c2331">
@@ -20,92 +20,92 @@
       </div>
       <div class="d-flex flex-row astro-P23KYIUG">
         <select onchange="location = this.value;" id="langSelector" class="py-2 px-4 font-semibold astro-P23KYIUG">
-  <option value="/astro-demo/" selected="true">
-          Español
-        </option><option value="/astro-demo/en">
+  <option value="/astro-demo/en" selected="true">
           English
+        </option><option value="/astro-demo/">
+          Español
         </option>
 </select>
-        <a class="nav-link astro-P23KYIUG" href="#us">¿Quiénes Somos?</a>
-        <a class="nav-link astro-P23KYIUG" href="#fanSection">Sección de Fans</a>
-        <a class="nav-link astro-P23KYIUG" href="#contact">Contáctanos</a>
+        <a class="nav-link astro-P23KYIUG" href="#us">Us</a>
+        <a class="nav-link astro-P23KYIUG" href="#fanSection">Fan Section</a>
+        <a class="nav-link astro-P23KYIUG" href="#contact">Contact Us</a>
       </div>
     </div>
   </nav>
 </header>
 
-<main class="container astro-CVDIQHHR">
+<main class="container astro-SLWZASK6">
 		<img src="/astro-demo/assets/messi.03745ee6.webp" alt="" class="astro-ORLEZ6XW">
-		<section id="us" class="astro-CVDIQHHR">
+		<section id="us" class="astro-SLWZASK6">
 			<div class="us astro-OINA3KOD">
-  <h2 class="astro-OINA3KOD">¿Quiénes Somos?</h2>
+  <h2 class="astro-OINA3KOD">Us</h2>
   <p class="astro-OINA3KOD">
-    Te conectamos con tu idolo de una manera unica, siendo parte de su comunidad oficial
+    We connect you with your idol in a unique way, being part of its official community
   </p>
 </div>
 
 
 		</section>
-		<section id="fanSection" class="astro-CVDIQHHR">
+		<section id="fanSection" class="astro-SLWZASK6">
 			<div class="fanSection astro-JOUZ5VCU">
   <div class="fanType astro-JOUZ5VCU">
     <img src="/astro-demo/assets/fan1.ab23b797.jpeg" alt="" class="astro-JOUZ5VCU">
     <div class="fanContent astro-JOUZ5VCU">
-      <h3 class="astro-JOUZ5VCU">Fan General</h3>
+      <h3 class="astro-JOUZ5VCU">General Fan</h3>
       <ul class="astro-JOUZ5VCU">
-        <li class="astro-JOUZ5VCU">Contenido exclusivo</li>
-        <li class="astro-JOUZ5VCU">Sorteos</li>
-        <li class="astro-JOUZ5VCU">Tienda oficial</li>
+        <li class="astro-JOUZ5VCU">Exclusive content</li>
+        <li class="astro-JOUZ5VCU">Giveaways</li>
+        <li class="astro-JOUZ5VCU">Oficial e-commerce</li>
       </ul>
       <button type="button" class="btn w-100 btn-outline-danger astro-JOUZ5VCU" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Gratis
+        Free
       </button>
     </div>
   </div>
   <div class="fanType astro-JOUZ5VCU">
     <img src="/astro-demo/assets/fan2.e9475c68.jpeg" alt="" class="astro-JOUZ5VCU">
     <div class="fanContent astro-JOUZ5VCU">
-      <h3 class="astro-JOUZ5VCU">Fan Platino</h3>
+      <h3 class="astro-JOUZ5VCU">Platinum Fan</h3>
       <ul class="astro-JOUZ5VCU">
-        <li class="astro-JOUZ5VCU">Contenido exclusivo</li>
-        <li class="astro-JOUZ5VCU">Sorteos épicos</li>
-        <li class="astro-JOUZ5VCU">Tienda oficial con colecciones limitadas</li>
-        <li class="astro-JOUZ5VCU">Posibilidad de conocerlo</li>
+        <li class="astro-JOUZ5VCU">Exclusive content</li>
+        <li class="astro-JOUZ5VCU">Epic Giveaways</li>
+        <li class="astro-JOUZ5VCU">Official e-commerce with limited collections</li>
+        <li class="astro-JOUZ5VCU">Chance to meet your idol</li>
       </ul>
       <button type="button" class="btn w-100 btn-outline-danger astro-JOUZ5VCU"> 3000$</button>
     </div>
   </div>
 </div>
 
-<astro-island uid="Z21SNQF" component-url="/astro-demo/FanModal.d9a496f2.js" component-export="default" renderer-url="/astro-demo/client.9a3ae8f8.js" props="{&quot;title&quot;:[0,&quot;Registra a tu ídolo...&quot;],&quot;inputLabel&quot;:[0,&quot;Nombres&quot;],&quot;buttonLabel&quot;:[0,&quot;Registrar&quot;]}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;FanModal&quot;,&quot;value&quot;:true}" await-children=""><div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog" style="text-align:left !important"><div class="modal-content"><div class="modal-header"><h1 class="modal-title fs-5" id="exampleModalLabel">Registra a tu ídolo...</h1><button id="closeModal" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body"><form><div class="mb-3"><label for="idol_name" class="form-label">Nombres</label><input type="text" class="form-control" id="idol_name"/></div><button data-bs-dismiss="modal" class="btn w-100 btn-outline-danger">Registrar</button></form></div></div></div></div></astro-island>
+<astro-island uid="Z1QamL1" component-url="/astro-demo/FanModal.d9a496f2.js" component-export="default" renderer-url="/astro-demo/client.9a3ae8f8.js" props="{&quot;title&quot;:[0,&quot;Register your idol...&quot;],&quot;inputLabel&quot;:[0,&quot;Names&quot;],&quot;buttonLabel&quot;:[0,&quot;Register&quot;]}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;FanModal&quot;,&quot;value&quot;:true}" await-children=""><div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog" style="text-align:left !important"><div class="modal-content"><div class="modal-header"><h1 class="modal-title fs-5" id="exampleModalLabel">Register your idol...</h1><button id="closeModal" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body"><form><div class="mb-3"><label for="idol_name" class="form-label">Names</label><input type="text" class="form-control" id="idol_name"/></div><button data-bs-dismiss="modal" class="btn w-100 btn-outline-danger">Register</button></form></div></div></div></div></astro-island>
 
 
 		</section>
-		<section id="contact" class="astro-CVDIQHHR">
+		<section id="contact" class="astro-SLWZASK6">
 			<div class="contactSection astro-TZT5654A">
   <div class="contactColumn astro-TZT5654A">
-    <h2 class="mb-5 astro-TZT5654A">Contáctanos</h2>
+    <h2 class="mb-5 astro-TZT5654A">Contact Us</h2>
     <form class="astro-TZT5654A">
       <div class="mb-3 astro-TZT5654A">
-        <label for="name" class="form-label astro-TZT5654A">Nombres</label>
+        <label for="name" class="form-label astro-TZT5654A">Names</label>
         <input type="text" class="form-control astro-TZT5654A" id="name">
       </div>
       <div class="mb-3 astro-TZT5654A">
-        <label for="email" class="form-label astro-TZT5654A">Correo</label>
+        <label for="email" class="form-label astro-TZT5654A">Mail</label>
         <input type="email" class="form-control astro-TZT5654A" id="email" aria-describedby="emailHelp">
       </div>
       <div class="mb-3 astro-TZT5654A">
-        <label for="topic" class="form-label astro-TZT5654A">Asunto</label>
+        <label for="topic" class="form-label astro-TZT5654A">Subject</label>
         <textarea class="form-control astro-TZT5654A" id="topic"></textarea>
       </div>
-      <button type="submit" class="btn w-100 btn-block btn-outline-danger astro-TZT5654A">Enviar</button>
+      <button type="submit" class="btn w-100 btn-block btn-outline-danger astro-TZT5654A">Send</button>
     </form>
   </div>
   <div class="contactColumn astro-TZT5654A">
-    <h2 class="mb-5 astro-TZT5654A">Información de Contacto</h2>
-    <h3 class="astro-TZT5654A">Teléfono</h3>
+    <h2 class="mb-5 astro-TZT5654A">Contact Info</h2>
+    <h3 class="astro-TZT5654A">Phone</h3>
     <p class="astro-TZT5654A">+54 9 3413 69-2993</p>
-    <h3 class="astro-TZT5654A">Correo</h3>
+    <h3 class="astro-TZT5654A">Mail</h3>
     <p class="astro-TZT5654A">specialfanoficial@gmail.com</p>
     <h4 class="astro-TZT5654A">Rosario, Argentina</h4>
   </div>
@@ -160,7 +160,7 @@
             <h6 class="text-uppercase fw-bold">SpecialFan</h6>
             <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px">
             <p>
-                Te conectamos con tu idolo de una manera unica, siendo parte de su comunidad oficial
+                We connect you with your idol in a unique way, being part of its official community
             </p>
           </div>
           <!-- Grid column -->
@@ -208,7 +208,7 @@
           <!-- Grid column -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Información de Contacto</h6>
+            <h6 class="text-uppercase fw-bold">Contact Info</h6>
             <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px">
             <p><i class="fas fa-home mr-3"></i> Rosario, Argentina</p>
             <p><i class="fas fa-envelope mr-3"></i> specialfanoficial@gmail.com</p>
