@@ -10,7 +10,7 @@ function FanModal({title, inputLabel, buttonLabel}) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name: idol_name.current.value })
     };
-    fetch('http://localhost:8000/idols/', requestOptions)
+    fetch('https://special-fan.onrender.com/idols/', requestOptions)
         .then(response => response.json())
         .then(data => console.log(data));
   }
